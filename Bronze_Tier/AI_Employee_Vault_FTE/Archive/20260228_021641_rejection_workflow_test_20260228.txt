@@ -1,0 +1,19 @@
+SENSITIVE TRANSACTION - REQUIRES APPROVAL
+=========================================
+Date: 2026-02-28
+Classification: CONFIDENTIAL
+
+Transaction Details:
+- Vendor: Rejected Test Vendor LLC
+- Amount: $15,000
+- Purpose: Testing rejection workflow
+- Payment Method: Wire transfer
+
+Risk Assessment:
+This transaction is for testing the rejection workflow.
+Human will REJECT this to verify the system works correctly.
+
+Instructions for AI:
+1. Flag this for human approval
+2. Create approval request in /Pending_Approval
+3. Human will move it to /Rejected for testing

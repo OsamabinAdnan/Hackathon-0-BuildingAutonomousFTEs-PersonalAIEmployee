@@ -1,0 +1,43 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# ===========================================
+# Security - NEVER commit these!
+# ===========================================
+.env
+credentials/
+*.pem
+*.key
+tokens/
+
+# ===========================================
+# Session Data
+# ===========================================
+sessions/
+*.session
+
+# ===========================================
+# Obsidian Workspace
+# ===========================================
+# Keep vault content, ignore workspace state
+AI_Employee_Vault_FTE/.obsidian/workspace.json
+
+# ===========================================
+# Logs
+# ===========================================
+*.log
+logs/
+
+# ===========================================
+# OS Files
+# ===========================================
+.DS_Store
+Thumbs.db

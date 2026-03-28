@@ -1,0 +1,16 @@
+# Bronze Tier Dependencies
+# AI Employee - File System Watcher
+
+# File system monitoring
+watchdog>=3.0.0
+
+# Type hints (for development)
+typing-extensions>=4.0.0
+
+# Optional: For Gmail watcher (Silver tier and above)
+# google-api-python-client>=2.0.0
+# google-auth-oauthlib>=1.0.0
+# google-auth-httplib2>=0.1.0
+
+# Optional: For Playwright-based watchers (Silver tier and above)
+# playwright>=1.40.0

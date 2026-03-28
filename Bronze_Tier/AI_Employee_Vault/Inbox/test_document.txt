@@ -1,0 +1,11 @@
+This is a test document for the AI Employee.
+It contains sample data for processing.
+
+Key Information:
+- Project: Bronze Tier Integration Test
+- Date: 2026-02-18
+- Priority: High
+- Status: Testing
+
+Action Required:
+Please summarize this document and create an action plan.

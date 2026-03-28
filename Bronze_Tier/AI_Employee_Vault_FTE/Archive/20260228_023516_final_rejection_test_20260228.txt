@@ -1,0 +1,18 @@
+SENSITIVE PAYMENT - REQUIRES APPROVAL
+=====================================
+Date: 2026-02-28
+Classification: CONFIDENTIAL
+
+Payment Details:
+- Recipient: Final Test Vendor Inc.
+- Amount: $20,000
+- Purpose: Testing complete rejection workflow
+- Payment Method: Wire transfer
+
+This payment is for testing that the rejection workflow:
+1. Deletes the action file from /In_Progress
+2. Keeps only the rejection file in /Rejected with REJECTED_ prefix
+3. No orphaned files remain
+
+Instructions for AI:
+Flag this for human approval. Human will REJECT to test the workflow.

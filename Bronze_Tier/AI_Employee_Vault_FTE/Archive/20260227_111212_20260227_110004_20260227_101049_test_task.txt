@@ -1,0 +1,17 @@
+# Test Task File
+
+This is a test file to verify the Bronze Tier AI Employee system.
+
+## Task Details
+- Priority: Medium
+- Type: Test
+- Created: 2026-02-27
+
+## What to Do
+1. Read this file
+2. Acknowledge receipt
+3. Create a summary
+4. Move to /Done folder
+
+## Notes
+This file was created to test the FileSystem Watcher and Orchestrator workflow.
