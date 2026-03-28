@@ -1,0 +1,19 @@
+CONFIDENTIAL CONTRACT - REQUIRES APPROVAL
+=========================================
+Date: 2026-02-28
+Classification: SENSITIVE
+
+Contract Details:
+- Vendor: XYZ Services Ltd
+- Contract Value: $75,000
+- Duration: 12 months
+- Payment Terms: Quarterly installments
+- Confidentiality: Full NDA required
+
+Action Required:
+Please review and approve this vendor contract.
+
+Instructions for AI:
+1. Flag this for human approval
+2. Create approval request in /Pending_Approval
+3. Wait for human to approve before proceeding

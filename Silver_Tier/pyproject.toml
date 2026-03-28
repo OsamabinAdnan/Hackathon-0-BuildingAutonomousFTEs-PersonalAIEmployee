@@ -1,0 +1,21 @@
+[project]
+name = "silver-tier"
+version = "0.1.0"
+description = "Personal AI Employee - Silver Tier: Functional Assistant"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "watchdog>=6.0.0",
+    "python-dotenv>=1.0.0",
+    "colorama>=0.4.6",
+    "google-api-python-client>=2.100.0",
+    "google-auth-oauthlib>=1.2.0",
+    "playwright>=1.40.0",
+    "httpx>=0.25.0",
+    "mcp>=1.26.0",
+]
+
+[project.optional-dependencies]
+mcp = [
+    "mcp>=1.0.0",
+]

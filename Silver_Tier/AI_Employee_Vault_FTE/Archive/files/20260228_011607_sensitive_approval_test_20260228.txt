@@ -1,0 +1,20 @@
+SENSITIVE DOCUMENT - REQUIRES HUMAN APPROVAL
+=============================================
+Date: 2026-02-28
+Classification: CONFIDENTIAL
+
+This document contains sensitive business information that requires explicit human approval before processing.
+
+Details:
+- Vendor: ABC Corporation
+- Contract Value: $50,000
+- Payment Terms: Net 30 days
+- Confidentiality: NDA required
+
+Action Required:
+Please review and approve/reject the vendor contract terms.
+
+Instructions for AI:
+1. Flag this for human approval
+2. Create approval request in /Pending_Approval
+3. Do NOT process until human explicitly approves

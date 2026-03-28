@@ -1,0 +1,7 @@
+Test file for Bronze Tier AI Employee.
+Date: 2026-02-27
+
+Instructions:
+1. Read this file
+2. Create a brief summary
+3. Update the dashboard

@@ -1,0 +1,11 @@
+Test file for action tags logging.
+Date: 2026-02-27
+
+This file tests the improved logging with action tags:
+- [SKILL] tags for skill invocations
+- [READ] tags for file reads
+- [WRITE] tags for file writes
+- [MOVE] tags for file moves
+- [DONE] tags for completions
+
+Please process this file and demonstrate the action tag logging.

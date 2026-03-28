@@ -435,5 +435,4 @@ See [Odoo JSON-RPC API Reference](https://www.odoo.com/documentation/19.0/develo
 ---
 
 **Last Updated:** March 25, 2026  
-**Hackathon:** Personal AI Employee Hackathon 0  
-**Team:** [Your Name/Team]
+**Hackathon:** Personal AI Employee Hackathon 0
