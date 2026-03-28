@@ -1,0 +1,86 @@
+# ==========================================
+# PLATINUM TIER - VAULT GITIGNORE
+# ==========================================
+# This .gitignore ensures secrets NEVER sync to cloud
+# Place this in AI_Employee_Vault_FTE/.gitignore
+
+# ==========================================
+# CRITICAL - NEVER SYNC THESE
+# ==========================================
+
+# Environment files (contain secrets)
+.env
+.env.local
+.env.cloud
+.env.example
+
+# Credentials (OAuth tokens, API keys)
+credentials/
+*.json
+!package.json
+*.token.json
+*.pem
+*.key
+*.crt
+
+# Sessions (WhatsApp, browser)
+sessions/
+*.session
+*.browser
+
+# Banking & Payments
+banking/
+payments/
+*bank*.json
+*payment*.json
+
+# Local-only configurations
+config.local.*
+*.local.json
+
+# ==========================================
+# OS Files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+.Spotlight-V100
+.Trashes
+
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+uv.lock
+
+# ==========================================
+# IDE
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Logs (Optional - uncomment to sync audit logs)
+# ==========================================
+# Keep logs local by default
+Logs/*.log
+Logs/audit/*.json
+
+# ==========================================
+# Drafts (Optional - keep local during development)
+# ==========================================
+drafts/
+
+# ==========================================
+# WHAT WE DO SYNC:
+# ==========================================
+# - *.md files (all markdown)
+# - State JSON files (non-sensitive)
+# - Plans, action files, completed tasks
+# ==========================================
