@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "ai-employee": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "python", "-m", "mcp_server"],
+      "cwd": "E:\\Hackathon-0-Personal-FTE\\Gold_Tier"
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
+      "env": {
+        "PLAYWRIGHT_BROWSERS_PATH": "0"
+      }
+    }
+  },
+  "dangerouslyDisableSandbox": false,
+  "allowList": {
+    "enabled": false
+  }
+}

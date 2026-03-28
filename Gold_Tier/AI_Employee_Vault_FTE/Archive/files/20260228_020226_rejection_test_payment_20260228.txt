@@ -1,0 +1,20 @@
+SENSITIVE FINANCIAL TRANSACTION - REQUIRES APPROVAL
+===================================================
+Date: 2026-02-28
+Classification: CONFIDENTIAL
+
+Transaction Details:
+- Recipient: ABC Consulting Group
+- Amount: $25,000
+- Purpose: Software development services
+- Payment Method: Wire transfer
+- Account: Business checking
+
+Risk Assessment:
+This transaction involves a new vendor and significant amount.
+Requires explicit human approval before processing.
+
+Instructions for AI:
+1. Flag this for human approval
+2. Create approval request in /Pending_Approval
+3. Human will REJECT this transaction for testing purposes

@@ -1,0 +1,35 @@
+[project]
+name = "gold-tier"
+version = "0.1.0"
+description = "Personal AI Employee - Gold Tier: Autonomous Employee"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    # Core dependencies
+    "watchdog>=6.0.0",
+    "python-dotenv>=1.0.0",
+    "colorama>=0.4.6",
+    "httpx>=0.25.0",
+    "mcp>=1.26.0",
+    
+    # Google APIs (Gmail Watcher)
+    "google-api-python-client>=2.100.0",
+    "google-auth-oauthlib>=1.2.0",
+    
+    # Browser Automation (WhatsApp Watcher)
+    "playwright>=1.40.0",
+    
+    # Gold Tier: Facebook/Instagram Graph API
+    "requests>=2.31.0",
+    
+    # Gold Tier: Odoo XML-RPC (built-in xmlrpc.client, but urllib3 for fallback)
+    "urllib3>=2.0.0",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.0.0"]
+dev = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+    "ruff>=0.1.0",
+]

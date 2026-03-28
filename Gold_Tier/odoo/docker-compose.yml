@@ -1,0 +1,64 @@
+# Odoo 19 + PostgreSQL Docker Compose
+# Gold Tier: AI Employee Accounting System
+#
+# Usage:
+#   cd odoo
+#   docker-compose up -d
+#   docker-compose logs -f
+#
+# Access: http://localhost:8069
+# Master Password: admin
+# Database: odoo_db
+# DB User: odoo
+# DB Password: odoo123
+
+volumes:
+  odoo_data:
+  postgres_data:
+
+services:
+  db:
+    image: postgres:15
+    container_name: ai_employee_odoo_db
+    environment:
+      - POSTGRES_DB=odoo_db
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo123
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U odoo -d odoo_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - odoo_network
+
+  odoo:
+    image: odoo:19.0
+    container_name: ai_employee_odoo
+    ports:
+      - "8069:8069"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - ODOO_ADMIN_PASSWORD=admin
+      - HOST=db
+      - PORT=5432
+      - USER=odoo
+      - PASSWORD=odoo123
+      - NAME=odoo_db
+    volumes:
+      - odoo_data:/var/lib/odoo
+      - ./addons:/mnt/extra-addons
+      - ./logs:/var/log/odoo
+    restart: unless-stopped
+    networks:
+      - odoo_network
+
+networks:
+  odoo_network:
+    driver: bridge

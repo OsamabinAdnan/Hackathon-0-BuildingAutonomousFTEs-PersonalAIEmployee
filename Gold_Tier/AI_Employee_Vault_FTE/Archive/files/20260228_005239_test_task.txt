@@ -1,0 +1,5 @@
+This is a test task for the AI Employee.
+Date: 2026-02-28
+
+Task: Please process this file and create a summary.
+This is a routine task that doesn't require human approval.
